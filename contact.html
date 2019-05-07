@@ -10,7 +10,7 @@
 
         gtag('config', 'UA-139410411-1');
     </script>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
@@ -33,6 +33,7 @@
         <div class="contact-info">
             <img src="assets/images/profile-img.jpg" alt="profile-img" >
             <div>
+                <h1>Contact me</h1>
                 <p>I am currently looking for a junior frontend developer work that will allow me to progress in my career. </p> 
                 <p>You can contact me using: 
                     <a href="mailto:svjetlanazolja@gmail.com">Email</a>, 
@@ -40,6 +41,23 @@
                     or 
                     <a href="https://github.com/svjetlanazolja">GitHub</a>.
                 </p>
+            
+                <form class="contact-form" netlify>
+                    <h2>Let's work together!</h2>
+                    
+                    <label for="name">Your Name</label> 
+                    <input type="text" name="name">
+
+                    <label for="email">Your Email</label> 
+                    <input type="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+
+                    <label for="message">Your message</label>
+                    <textarea name="message" rows="10"> 
+                    </textarea>  
+                    <button>Send</button>
+                </form>
+                
+        
             </div>
         </div>
     </main>
