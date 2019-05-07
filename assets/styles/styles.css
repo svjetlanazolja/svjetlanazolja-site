@@ -52,6 +52,10 @@ blockquote {
     color: black; 
 }
 
+main {
+    margin-bottom: 50px; 
+}
+
 .site-content {
     grid-template-columns: 1fr 400px 100px 100px 400px 1fr; 
     display: grid; 
@@ -84,4 +88,27 @@ blockquote {
 .contact-info img {
     width: 200px; 
     margin-right: 20px; 
+}
+
+footer {
+    text-align: center; 
+    margin-left: 1rem; 
+    margin-right: 1rem; 
+}
+
+@media (max-width: 800px) { 
+    .site-header {
+        flex-direction: column; 
+    }
+    .site-content {
+        grid-template-columns: 1fr; 
+        margin-left: 1rem; 
+        margin-right: 1rem; 
+    }
+    .text1, .blockquote1, .text2, .blockquote2 {
+        grid-column: 1; 
+    }
+    .contact-info {
+        flex-direction: column; 
+    }
 }
