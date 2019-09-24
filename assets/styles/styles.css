@@ -36,7 +36,7 @@ blockquote {
     position: -webkit-sticky;
     position: sticky;
     top: -240px;  
-
+    margin-bottom: 2rem; 
 }
 
 .site-logo {
@@ -132,10 +132,16 @@ main {
 button {
     border-radius: 30px;
     padding: 10px 40px; 
-    background: linear-gradient(158deg, rgba(251,16,5,1) 0%, rgba(249,240,146,1) 15%, rgba(249,240,146,1) 26%, rgba(115,154,110,1) 33%, rgba(115,154,110,1) 100%);
+    background-image: linear-gradient(158deg, rgba(251,16,5,1) 0%, rgba(249,240,146,1) 15%, rgba(249,240,146,1) 26%, rgba(115,154,110,0) 33%, rgba(115,154,110,0) 100%);
+    background-color: rgba(115,154,110,1);
     border: none;
     color:white; 
 }
+
+button:hover {
+    background-color: rgb(134, 175, 128);
+    transition: background-color 1s ease; 
+ }
 
 footer {
     text-align: center; 
@@ -176,4 +182,41 @@ footer {
 	100% {
 		background-position: 0% 50%
 	}
+}
+
+.content-center {
+    grid-template-columns: 1fr; 
+    grid-gap: 2rem; 
+    margin-right: 1rem; 
+    margin-left: 1rem; 
+}
+
+@media (min-width: 1024px) {
+    .content-center {
+        grid-template-columns: 1fr 1fr; 
+        margin-right: auto; 
+        margin-left: auto; 
+        width: 50rem; 
+    }
+}
+
+.project-box-img {
+    margin-bottom: 1rem; 
+}
+
+@media (min-width: 1024px) {
+    .project-box-img {
+        height: 15rem; 
+    }
+}
+
+.project-box-img img {
+   width: 100%; 
+}
+
+@media (min-width: 1024px) {
+    .project-box-img img {
+        object-fit: cover; 
+        height: 100%;
+    }
 }
